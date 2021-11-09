@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 99;
+}
+
+.head {
+    height: 100px;
+    background-color: rgb(139, 204, 179);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 21px;
+    margin: 10px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #f7c852;
+    transform: scale(1.1);
+
+}
+nav ul li a:hover{
+    transition: all 500ms;
+    background-color: #f3b414;
+    color: white;
+}
+
+.search {
+    width: 534px;
+    height: 40px;
+    font-size: 20px;
+}
+ .h_form button{
+    background-color: orange;
+    height: 40px;
+    cursor: pointer;
+    float: right;
+    width: 35px;
+}
+.h_form button::after{
+    clear: both;
+}

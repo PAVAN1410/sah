@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+}
+
+.toplevel{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.head {
+    height: 100px;
+    background-color:rgb(139, 204, 179) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px 21px;
+    margin: 10px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #f7c852;
+    transform: scale(1.1);
+
+}
+.navbar ul li a:hover{
+    transition: all 500ms;
+    background-color: #f3b414;
+    color: white;
+}
+
+.search {
+    width: 534px;
+    height: 40px;
+    font-size: 20px;
+}
+.searchIcon {
+    background-color: orange;
+    height: 40px;
+    cursor: pointer;
+    float: right;
+    width: 35px;
+}
+.searchIcon::after{
+    clear: both;
+}
+
+
+/* for hamburger menu */
+
+
+#menu {
+    /* background-color: white; */
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: darkviolet;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.change .bar {
+    background-color: skyblue;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar2 {
+    /* display: none; */
+    opacity: 0;
+    /* visibility: hidden; */
+}
+
+.nav li a {
+    color: mediumvioletred;
+    text-decoration: none;
+}
+
+.nav li:hover {
+    font-weight: bolder;
+    transition: all 2s ease;
+    /* transform: translateX(20px); */
+    /* transform: scaley(2); */
+    font-size:25px ;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+.nav {
+    padding: 0px;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+    /* z-index: 2; */
+}
+
+#menu_bar {
+    z-index: 2;
+}
+
+
+.menu_bg {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+
+}
+
+.change {
+    display: block;
+}
+
+.menu_bg {
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgb(209, 130, 143), rgb(231, 44, 44));
+    transition: 0.3s ease;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translate(-60% ,-25%);
+    margin: 30px 0 20px 20px;
+}
+
+.change_bg {
+    width: 540px;
+    height: 500px;
+}
